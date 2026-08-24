@@ -7,8 +7,8 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import dev.relaypatch.app.data.local.AppDatabase
-import dev.relaypatch.app.data.local.PatchDao
+import dev.relaypatch.app.data.db.AppDatabase
+import dev.relaypatch.app.data.db.PatchDao
 import javax.inject.Singleton
 
 /**
@@ -32,7 +32,7 @@ object DatabaseModule {
     ): AppDatabase = Room.databaseBuilder(
         context,
         AppDatabase::class.java,
-        AppDatabase.DATABASE_NAME
+        "relaypatch.db"
     )
         .fallbackToDestructiveMigration()
         .build()

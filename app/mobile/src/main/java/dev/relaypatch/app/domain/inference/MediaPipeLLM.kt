@@ -43,9 +43,6 @@ class MediaPipeLLM @Inject constructor(
             val options = LlmInferenceOptions.builder()
                 .setModelPath(MODEL_PATH)
                 .setMaxTokens(1024)
-                .setTopK(40)
-                .setTemperature(0.1f)
-                .setRandomSeed(42)
                 .build()
             LlmInference.createFromOptions(context, options)
         }

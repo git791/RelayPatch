@@ -134,6 +134,7 @@ class OfficeKitTransport @Inject constructor(
 
             Log.i(tag, "sendPatch: wrote ${sizeBytes}B for patch ${patch.id} to clipboard " +
                     "(stub — replace with Office Kit SDK in production)")
+            Unit
         }.mapFailure { throwable ->
             when (throwable) {
                 is BridgeError -> throwable

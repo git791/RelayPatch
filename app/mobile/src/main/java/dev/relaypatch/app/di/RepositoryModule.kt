@@ -4,8 +4,8 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import dev.relaypatch.app.data.repository.PatchRepository
-import dev.relaypatch.app.data.repository.PatchRepositoryImpl
+import dev.relaypatch.app.domain.PatchRepository
+import dev.relaypatch.app.domain.PatchRepositoryImpl
 import javax.inject.Singleton
 
 /**

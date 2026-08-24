@@ -7,9 +7,9 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import dev.relaypatch.app.inference.FakeLLM
-import dev.relaypatch.app.inference.LocalLLM
-import dev.relaypatch.app.inference.MediaPipeLLM
+import dev.relaypatch.app.domain.inference.FakeLLM
+import dev.relaypatch.app.domain.inference.LocalLLM
+import dev.relaypatch.app.domain.inference.MediaPipeLLM
 import java.io.File
 import javax.inject.Singleton
 

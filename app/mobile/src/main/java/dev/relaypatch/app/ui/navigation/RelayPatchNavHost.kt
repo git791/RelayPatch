@@ -24,8 +24,11 @@ fun RelayPatchNavHost() {
             )
         }
         composable("diff/{patchId}") { backStackEntry ->
-            // val patchId = backStackEntry.arguments?.getString("patchId") ?: return@composable
-            // DiffInspectorScreen(...)
+            val patchId = backStackEntry.arguments?.getString("patchId") ?: return@composable
+            dev.relaypatch.app.ui.screens.diff.DiffInspectorScreen(
+                patchId = patchId,
+                onNavigateBack = { navController.popBackStack() }
+            )
         }
     }
 }
