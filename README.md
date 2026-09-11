@@ -228,6 +228,11 @@ Because copy-pasting across a phone-only lockout (like Red Light) isn't possible
 ## 🙌 Credits & license
 
 Built for iQOO City Battles 2026 (Developer Tools track), organized by iQOO × Reskilll.
+
+### 👥 Team
+- **Mohammed Ayaan Adil Ahmed**
+- **BiBi Sufiya Shariff**
+
 Model weights: Google Gemma 3n (Gemma license). Code: MIT License unless noted otherwise.
 
 *Great ideas don't need desks — and apparently, neither do bug fixes.*
