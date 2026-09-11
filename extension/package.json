@@ -6,7 +6,7 @@
   "publisher": "relaypatch",
   "engines": { "vscode": "^1.93.0" },
   "categories": ["Other"],
-  "activationEvents": ["onCommand:relaypatch.openDiff"],
+  "activationEvents": ["*"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
