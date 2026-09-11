@@ -46,17 +46,17 @@ class DiffParserTest {
         // 2 file headers + 1 hunk header + 3 context/added/removed lines = 6 lines
         assertEquals(6, parsed.size)
         
-        assertEquals(LineType.HEADER, parsed[0].lineType)
-        assertEquals(LineType.HEADER, parsed[1].lineType)
-        assertEquals(LineType.HUNK_HEADER, parsed[2].lineType)
+        assertEquals(DiffParser.LineType.HEADER, parsed[0].lineType)
+        assertEquals(DiffParser.LineType.HEADER, parsed[1].lineType)
+        assertEquals(DiffParser.LineType.HUNK_HEADER, parsed[2].lineType)
         
-        assertEquals(LineType.CONTEXT, parsed[3].lineType)
+        assertEquals(DiffParser.LineType.CONTEXT, parsed[3].lineType)
         assertEquals(" fun example() {", parsed[3].content)
         
-        assertEquals(LineType.DELETION, parsed[4].lineType)
+        assertEquals(DiffParser.LineType.DELETION, parsed[4].lineType)
         assertEquals("-    println(\"old\")", parsed[4].content)
         
-        assertEquals(LineType.ADDITION, parsed[5].lineType)
+        assertEquals(DiffParser.LineType.ADDITION, parsed[5].lineType)
         assertEquals("+    println(\"new\")", parsed[5].content)
     }
 
